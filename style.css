@@ -1,0 +1,134 @@
+:root{
+    --purple:#814096;
+    --pink:#F83292;
+    --gradient:linear-gradient(90deg, var(--purple), var(--pink));
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; 
+    border:none;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0 !important;
+}
+#menu ul{
+    position: fixed;
+    top:0; 
+    width:100%;
+    padding:30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1000;
+    list-style: none;
+}
+#menu li a{
+    padding: 0px 20px;
+    font-size: 14px;
+    color: black;
+}
+#menu li a:hover{
+    color:var(--pink);
+}
+#header{
+    position: fixed;
+    top:0; 
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1000;
+    padding-top: 30px;
+    padding-left: 15px;
+    background:rgb(247, 247, 247);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color:var(--purple);
+}
+#header h2{
+    font-size: 12px;
+    color:var(--pink);
+}
+#header h1{
+    font-size: 25px;
+    justify-content: flex-start;
+}
+#leftmenu{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background:rgb(247, 247, 247);
+    padding-top: 99px;
+} 
+#leftmenu_main h3{
+    color: rgb(14, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#leftmenu_main ul li{
+    padding: 12px;
+    font-size: 14px;
+}
+#leftmenu_main ul li a{
+    color: #010007;
+    display: block;
+}
+#leftmenu_main ul li:hover {
+    background:var(--gradient);
+    transform: scale(1.1);
+    transition: all .3s linear;
+    
+}
+#leftmenu_main ul li:hover a{
+    color: #fff;
+}
+#content_main{
+    padding-left: 234px;
+    font-size: 14px;
+    color:#666;
+    padding-top: 15px;
+    text-align: justify;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+#content_main{
+    padding-top: 112px;
+}
+#content_main p{
+    font-size: 15px;
+    color: black;
+    text-align: justify;
+}
+
+
+#footer{
+    text-align: center;
+    height: auto;
+    width: 100vw;
+    font-family: serif;
+    padding-top: 135px;
+
+}
+#footer h3{
+    padding: 15px 0;
+    width: 100vw;
+    background: rgb(255, 241, 253);
+}
+#footer a{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    opacity: .9;
+    font-weight: 200;
+    color: black;
+}
